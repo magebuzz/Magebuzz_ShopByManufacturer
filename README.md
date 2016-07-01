@@ -11,19 +11,19 @@
    Better manufacturer description
 
 * Ability to add details for manufacturers
- In the backend, admins can upload full information, namely description, logo and website for each manufacturer for the customers who want to view additional information. 
+  In the backend, admins can upload full information, namely description, logo and website for each manufacturer for the customers who want to view additional information. 
 
 * Manufacturer listing page
- Shop by Manufacturer allows you to create a separate page containing all existed brands at the store.
+  Shop by Manufacturer allows you to create a separate page containing all existed brands at the store.
 
 * Manufacturer detail page
- On the frontend, every manufacturer has its own page in which the manufacturer’s details and products are well displayed. 
+  On the frontend, every manufacturer has its own page in which the manufacturer’s details and products are well displayed. 
 
 * SEO enhancement
- The module allows admin to add Meta keywords & Meta description in the manufacturer detail page for SEO improvement
+  The module allows admin to add Meta keywords & Meta description in the manufacturer detail page for SEO improvement
 
 * Featured manufacturers support
-Store owners can set a manufacturer as featured or not and show it on the top of the manufacturers page. This feature is available to help you point out the best selling brands, in turn, enhancing your business.
+  Store owners can set a manufacturer as featured or not and show it on the top of the manufacturers page. This feature is available to help you point out the best selling brands, in turn, enhancing your business.
 
 * Flexible configuration
   * Ability to change URL for the module
@@ -31,16 +31,16 @@ Store owners can set a manufacturer as featured or not and show it on the top of
   * Allow admin to select attribute code for manufacturer
 
 * Quick product selection for each manufacturer
- You can assign multiple products for each manufacturer simultaneously instead of making updates item by item as default.
+  You can assign multiple products for each manufacturer simultaneously instead of making updates item by item as default.
 
 * Manufacturer navigation
- The manufacturer navigation can be displayed in the left or right sidebar, allowing your customers to easily browse products belonging to any manufacturer. 
+  The manufacturer navigation can be displayed in the left or right sidebar, allowing your customers to easily browse products belonging to any manufacturer. 
 
 * Frontend display
   * Customers can view all manufacturers of all products listed alphabetically or according to the first letter that provides them a quicker approach.
   * After selecting a brand, customers will see the manufacturer’s information and its products listed below with navigation.
 
-s
+
 ## Info
 
 * R1403, N03 Building, 25 Lac Trung, Hai Ba Trung
