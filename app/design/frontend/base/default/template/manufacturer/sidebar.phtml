@@ -1,0 +1,28 @@
+<?php
+/*
+* Copyright (c) 2016 www.magebuzz.com
+*/
+$manufacturers = $this->getManufacturers();?>
+<?php if (count($manufacturers)): ?>
+  <div class="block block-manufacturer">
+    <div class="block-title">
+      <strong><span><?php echo Mage::helper('manufacturer')->getConfigTextLabe(); ?></span></strong>
+    </div>
+    <div class="block-content">
+      <div class="manufacturer-sidebar">
+        <ul>
+          <?php $i = 0;
+          foreach ($manufacturers as $manufacturer): ?>
+            <li class="<?php if ($i % 2 == 0): ?>left<?php else: ?>right<?php endif; ?>">
+              <a href="<?php echo $this->getManufacturerUrl($manufacturer->getId()); ?>"
+                 title="<?php echo $manufacturer->getName(); ?>">
+                <?php echo $manufacturer->getName(); ?>
+              </a>
+            </li>
+            <?php $i++; ?>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>

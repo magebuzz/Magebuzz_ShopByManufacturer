@@ -1,0 +1,29 @@
+<?php
+/*
+* Copyright (c) 2016 www.magebuzz.com
+*/
+
+$manufacturer = $this->getManufacturer();
+?>
+  <div class="page-title">
+    <h1><?php echo $manufacturer->getName(); ?></h1>
+  </div>
+  <div class="manufacturer-description">
+    <?php
+    $urlImage = $this->getManufacturerImage($manufacturer->getImage());
+    ?>
+    <?php if ($urlImage != ""): ?>
+      <div class="manufacturer-des-image">
+        <a title="<?php echo $manufacturer->getName(); ?>"><img src="<?php echo $urlImage; ?>"
+                                                                alt="<?php echo $manufacturer->getName() ?>"/> </a>
+      </div>
+    <?php endif; ?>
+    <div class="description-info">
+    <?php echo $manufacturer->getDescription()?>
+  </div>
+
+    <div class="link"><span>Website: </span><a href="http://<?php echo Mage::helper('manufacturer')->getLinkExtenal($manufacturer->getwebsite()) ?>"><?php echo Mage::helper('manufacturer')->getLinkExtenal($manufacturer->getwebsite()) ?></a></div>
+
+  </div>
+  <div class="clear" style="clear:both;"></div>
+<?php echo $this->getProductHtml() ?>

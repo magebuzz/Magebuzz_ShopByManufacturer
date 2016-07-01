@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<config>
+  <tabs>
+    <magebuzz translate="label">
+      <label>MageBuzz Add-ons</label>
+      <sort_order>400</sort_order>
+    </magebuzz>
+  </tabs>
+  <sections>
+    <manufacturer translate="label" module="manufacturer">
+      <class>separator-top</class>
+      <label>Manufacturer</label>
+      <tab>magebuzz</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>350</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <general translate="label">
+          <label>Manufacturer Listing Page</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <top_link_url translate="label">
+              <label>Show URL in top link</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>1</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </top_link_url>
+            <default_manufacturer_image>
+              <label>Default manufacturer image</label>
+              <frontend_type>image</frontend_type>
+              <backend_model>adminhtml/system_config_backend_image_pdf</backend_model>
+              <upload_dir config="system/filesystem/media" scope_info="1">manufacturer/default</upload_dir>
+              <base_url type="media" scope_info="1">manufacturer/default</base_url>
+              <sort_order>3</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </default_manufacturer_image>
+            <alphabet_sorting>
+              <label>Alphabet sort order</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>4</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </alphabet_sorting>
+            <group_alphabet>
+              <label>Group manufacturer by the first letter</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>5</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </group_alphabet>
+            <show_featured_manufacturer>
+              <label>Show featured manufacturer in top</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>6</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </show_featured_manufacturer>
+            <show_manufacturer_in_product_page>
+              <label>Show manufacturer in product page</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>7</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </show_manufacturer_in_product_page>
+            <enable_left_nav>
+              <label>Enable manufacturer navigation</label>
+              <frontend_type>select</frontend_type>
+              <sort_order>8</sort_order>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </enable_left_nav>
+          </fields>
+        </general>
+        <configfield translate="label">
+          <label>Configuration Text</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>2</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <text_attribute_code>
+              <label>Attribute Manufacturer Code</label>
+              <backend_model>manufacturer/validatemanufacturer</backend_model>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <validate>required-entry validate-alpha</validate>
+            </text_attribute_code>
+            <text_manufacturer_lable>
+              <label>Text Title Display In Frontend</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <validate>required-entry validate-alpha</validate>
+            </text_manufacturer_lable>
+            <text_featured_manufacturer_lable>
+              <label>Text Display In Featured</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <validate>required-entry</validate>
+              <comment>Title display in list featured manufacturer</comment>
+            </text_featured_manufacturer_lable>
+            <text_all_manufacturer_lable>
+              <label>Text Display For All</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <validate>required-entry</validate>
+              <comment>Title display in list all manufacturer</comment>
+            </text_all_manufacturer_lable>
+            <text_router>
+              <label>Text Router Display In Frontend</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <validate>required-entry validate-alpha</validate>
+            </text_router>
+          </fields>
+        </configfield>
+      </groups>
+    </manufacturer>
+  </sections>
+</config>

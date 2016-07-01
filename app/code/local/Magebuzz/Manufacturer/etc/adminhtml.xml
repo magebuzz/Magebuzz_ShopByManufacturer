@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+  <menu>
+    <manufacturer module="manufacturer">
+      <title>Manufacturer</title>
+      <sort_order>70</sort_order>
+      <children>
+        <manage_manufacturer module="manufacturer">
+          <title>Manage Manufacturers</title>
+          <sort_order>0</sort_order>
+          <action>manufacturer/adminhtml_manufacturer</action>
+        </manage_manufacturer>
+        <settings module="manufacturer" translate="title">
+          <title>Settings</title>
+          <sort_order>1000</sort_order>
+          <action>adminhtml/system_config/edit/section/manufacturer</action>
+        </settings>
+      </children>
+    </manufacturer>
+  </menu>
+  <acl>
+    <resources>
+      <all>
+        <title>Allow Everything</title>
+      </all>
+      <admin>
+        <children>
+          <system>
+            <children>
+              <config>
+                <children>
+                  <manufacturer module="manufacturer" translate="title">
+                    <title>Manufacturer</title>
+                    <sort_order>80</sort_order>
+                  </manufacturer>
+                </children>
+              </config>
+            </children>
+          </system>
+          <manufacturer module="manufacturer">
+            <title>Manufacturer</title>
+            <sort_order>70</sort_order>
+            <children>
+              <manage_manufacturer module="manufacturer">
+                <title>Manage Manufacturers</title>
+                <sort_order>0</sort_order>
+                <action>manufacturer/adminhtml_manufacturer</action>
+              </manage_manufacturer>
+              <settings module="manufacturer" translate="title">
+                <title>Settings</title>
+                <sort_order>1000</sort_order>
+                <action>adminhtml/system_config/edit/section/manufacturer</action>
+              </settings>
+            </children>
+          </manufacturer>
+        </children>
+      </admin>
+    </resources>
+  </acl>
+</config>
